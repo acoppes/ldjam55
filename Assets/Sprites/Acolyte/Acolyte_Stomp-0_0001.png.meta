@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9c5f0be4a3d624745be1bd53ed429d26
+guid: bacdaeb8572190f40a8dd0c592ba6bd3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3454110591565568934
-    second: mockups4_0
+      213: 4183799772784901781
+    second: Acolyte_Stomp-0_0001_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 0
   alignment: 0
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: mockups4_0
+      name: Acolyte_Stomp-0_0001_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 320
-        height: 180
+        x: 11
+        y: 15
+        width: 13
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,8 +127,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a54e1d6b7b88010d0800000000000000
-      internalID: -3454110591565568934
+      spriteID: 59e34340ab7df0a30800000000000000
+      internalID: 4183799772784901781
       vertices: []
       indices: 
       edges: []
@@ -136,7 +136,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -144,7 +144,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      mockups4_0: -3454110591565568934
+      Acolyte_Casting-0_0001_0: -8062410342899246609
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
