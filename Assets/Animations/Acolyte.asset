@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43476aec9d91461b89f0964aa65efc4e, type: 3}
+  m_Name: Acolyte
+  m_EditorClassIdentifier: 
+  sourceFolder: Assets\Sprites\Acolyte
+  animations:
+  - name: Casting-0
+    frames:
+    - sprite: {fileID: 21300000, guid: 033aa1744953db349a1f0a53f9ed517c, type: 3}
+      time: 0.083333336
+  - name: Casting-1
+    frames:
+    - sprite: {fileID: 21300000, guid: bfc1f2a47cc7349409a64394acd5919f, type: 3}
+      time: 0.083333336
+  - name: Follower-0
+    frames:
+    - sprite: {fileID: 21300000, guid: 05c20c11c1c7c54439d3568735a9de49, type: 3}
+      time: 0.083333336
+    - sprite: {fileID: 21300000, guid: 5df5abb317916bd46a3b0250420957dc, type: 3}
+      time: 0.083333336
+    - sprite: {fileID: 21300000, guid: 467bd75c5a30e9d4d8af4a77c3e6dfcd, type: 3}
+      time: 0.083333336
+    - sprite: {fileID: 21300000, guid: 5ad85d8217e2f464ca0ac4a7cc770ce0, type: 3}
+      time: 0.083333336
+    - sprite: {fileID: 21300000, guid: 1f7684bac60e85e439a5928fb35bd157, type: 3}
+      time: 0.083333336
+    - sprite: {fileID: 21300000, guid: 01b7b402c8a5a324983c03e9b8a34971, type: 3}
+      time: 0.083333336
+    - sprite: {fileID: 21300000, guid: 841c15ace5a52ec4cb331ccae914314d, type: 3}
+      time: 0.083333336
+    - sprite: {fileID: 21300000, guid: 35faf51f4ce678043bbf64a6e27d3dad, type: 3}
+      time: 0.083333336
+    - sprite: {fileID: 21300000, guid: 55bd30d6fef4af645b8df9642b2a327e, type: 3}
+      time: 0.083333336
+  - name: Follower-1
+    frames:
+    - sprite: {fileID: 21300000, guid: 64b420ff57e45834e9587d1e1bb6c4a9, type: 3}
+      time: 0.083333336
+    - sprite: {fileID: 21300000, guid: c462c3b708d44d743812b7feb993a7cd, type: 3}
+      time: 0.083333336
+    - sprite: {fileID: 21300000, guid: 793c404302291fd44af6a0b53c9c966b, type: 3}
+      time: 0.083333336
+    - sprite: {fileID: 21300000, guid: 91d273b2537342145876749dfa82afb7, type: 3}
+      time: 0.083333336
+    - sprite: {fileID: 21300000, guid: 246bc9b8e446e014485ec09ccd6cfec3, type: 3}
+      time: 0.083333336
+    - sprite: {fileID: 21300000, guid: 0a910ce5b5aa3284cb6a0ac88e2397af, type: 3}
+      time: 0.083333336
+    - sprite: {fileID: 21300000, guid: e7869851ba5fa83458603119708749b0, type: 3}
+      time: 0.083333336
+    - sprite: {fileID: 21300000, guid: 1593ad58cd59b7540a131e70590666d2, type: 3}
+      time: 0.083333336
+    - sprite: {fileID: 21300000, guid: 34dac3470ff1b3148ab0d0bbeca7a7cc, type: 3}
+      time: 0.083333336
+  - name: Idle-0
+    frames:
+    - sprite: {fileID: 21300000, guid: 258e31b7f6f76874996ea5fdc06de8bd, type: 3}
+      time: 0.083333336
+  - name: Idle-1
+    frames:
+    - sprite: {fileID: 21300000, guid: e0b74f2887a55ce44b5ce7ff96d94662, type: 3}
+      time: 0.083333336
+  - name: Prepare-0
+    frames:
+    - sprite: {fileID: 21300000, guid: 0b250919dd2431348ae29ae850750395, type: 3}
+      time: 0.083333336
+  - name: Prepare-1
+    frames:
+    - sprite: {fileID: 21300000, guid: 2520f484e8b93dd4db98d88b3787d445, type: 3}
+      time: 0.083333336
+  - name: Stomp-0
+    frames:
+    - sprite: {fileID: 21300000, guid: bacdaeb8572190f40a8dd0c592ba6bd3, type: 3}
+      time: 0.083333336
+  - name: Stomp-1
+    frames:
+    - sprite: {fileID: 21300000, guid: 41b8e7a5de5922e43b2ba0fb1fbe9817, type: 3}
+      time: 0.083333336
