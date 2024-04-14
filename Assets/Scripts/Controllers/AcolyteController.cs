@@ -6,6 +6,7 @@ using Gemserk.Leopotam.Ecs.Controllers;
 using Gemserk.Leopotam.Ecs.Events;
 using Gemserk.Utilities;
 using MyBox;
+using UnityEngine;
 
 namespace Controllers
 {
@@ -13,6 +14,9 @@ namespace Controllers
     {
         public MinMaxFloat randomStompTime;
         public MinMaxFloat randomPrepareTime;
+
+        [ObjectType(typeof(IEntityDefinition), filterString = "Definition")]
+        public Object stompImpulseDefinition; 
 
         public void OnInit(World world, Entity entity)
         {
@@ -77,6 +81,8 @@ namespace Controllers
             {
                 var stompAnimation = animations.animationsAsset.GetDirectionalAnimation("Stomp", lookingDirection.value);
                 animations.Play(stompAnimation, 1);
+
+                world.CreateEntity(stompImpulseDefinition);
             }
         }
     }
