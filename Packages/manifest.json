@@ -1,14 +1,38 @@
 {
   "dependencies": {
+    "com.antonysze.custom-play-button": "file:../../games/unity-packages/CustomPlayButton",
+    "com.domybest.mybox": "1.8.0",
+    "com.gemserk.aseprite": "file:../../unity-gemserk-utilities/Packages/com.gemserk.aseprite",
+    "com.gemserk.bitmasktypes": "0.0.14",
+    "com.gemserk.buildtools": "file:../../unity-gemserk-utilities/Packages/com.gemserk.buildtools",
+    "com.gemserk.gamescore": "file:../../unity-gemserk-utilities/Packages/com.gemserk.gamescore",
+    "com.gemserk.leopotamecs": "file:../../unity-gemserk-utilities/Packages/com.gemserk.leopotamecs",
+    "com.gemserk.refactortools": "0.0.16",
+    "com.gemserk.selectionhistory": "1.3.0",
+    "com.gemserk.triggers": "file:../../unity-gemserk-utilities/Packages/com.gemserk.triggers",
+    "com.gemserk.triggers.extensions": "file:../../unity-gemserk-utilities/Packages/com.gemserk.triggers.extensions",
+    "com.gemserk.uiguidesandrulers": "https://github.com/acoppes/UnityUIGuidesAndRulers.git#package",
+    "com.gemserk.utilities": "file:../../unity-gemserk-utilities/Packages/com.gemserk.utilities",
+    "com.github-glitchenzo.nugetforunity": "https://github.com/GlitchEnzo/NuGetForUnity.git?path=/src/NuGetForUnity",
+    "com.leoecscommunity.ecslite": "1.0.0",
+    "com.leoecscommunity.ecslite.di": "https://github.com/LeoECSCommunity/ecslite-di.git",
+    "com.leoecscommunity.ecslite.unityeditor": "https://github.com/LeoECSCommunity/ecslite-unityeditor.git",
+    "com.marijnzwemmer.unity-toolbar-extender": "file:../../games/unity-packages/ToolbarExtender",
+    "com.oss.leantween": "2.50.4",
+    "com.tayx.graphy": "3.0.5",
+    "com.unity.cinemachine": "3.0.1",
     "com.unity.collab-proxy": "2.3.1",
+    "com.unity.editorcoroutines": "1.0.0",
     "com.unity.feature.2d": "2.0.0",
-    "com.unity.ide.rider": "3.0.26",
+    "com.unity.ide.rider": "3.0.28",
     "com.unity.ide.visualstudio": "2.0.22",
+    "com.unity.inputsystem": "1.8.1",
     "com.unity.render-pipelines.universal": "16.0.4",
     "com.unity.test-framework": "1.3.9",
     "com.unity.timeline": "1.8.6",
     "com.unity.ugui": "2.0.0",
     "com.unity.visualscripting": "1.8.0",
+    "com.vertx.debugging": "2.3.0",
     "com.unity.modules.accessibility": "1.0.0",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
@@ -41,5 +65,21 @@
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
     "com.unity.modules.xr": "1.0.0"
-  }
+  },
+  "scopedRegistries": [
+    {
+      "name": "openupm",
+      "url": "https://package.openupm.com",
+      "scopes": [
+        "com.gemserk",
+        "com.leoecscommunity.ecslite",
+        "com.domybest.mybox",
+        "com.vertx",
+        "com.oss.leantween",
+        "com.mackysoft.serializereference-extensions",
+        "com.tayx.graphy",
+        "com.needle"
+      ]
+    }
+  ]
 }

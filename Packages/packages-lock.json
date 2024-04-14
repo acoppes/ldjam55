@@ -1,5 +1,149 @@
 {
   "dependencies": {
+    "com.antonysze.custom-play-button": {
+      "version": "file:../../games/unity-packages/CustomPlayButton",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {}
+    },
+    "com.domybest.mybox": {
+      "version": "1.8.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.ugui": "1.0.0"
+      },
+      "url": "https://package.openupm.com"
+    },
+    "com.gemserk.aseprite": {
+      "version": "file:../../unity-gemserk-utilities/Packages/com.gemserk.aseprite",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {
+        "com.gemserk.utilities": "0.0.3"
+      }
+    },
+    "com.gemserk.bitmasktypes": {
+      "version": "0.0.14",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://package.openupm.com"
+    },
+    "com.gemserk.buildtools": {
+      "version": "file:../../unity-gemserk-utilities/Packages/com.gemserk.buildtools",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {
+        "com.gemserk.refactortools": "0.0.6",
+        "com.gemserk.utilities": "0.0.3"
+      }
+    },
+    "com.gemserk.gamescore": {
+      "version": "file:../../unity-gemserk-utilities/Packages/com.gemserk.gamescore",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {}
+    },
+    "com.gemserk.leopotamecs": {
+      "version": "file:../../unity-gemserk-utilities/Packages/com.gemserk.leopotamecs",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {}
+    },
+    "com.gemserk.refactortools": {
+      "version": "0.0.16",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://package.openupm.com"
+    },
+    "com.gemserk.selectionhistory": {
+      "version": "1.3.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://package.openupm.com"
+    },
+    "com.gemserk.triggers": {
+      "version": "file:../../unity-gemserk-utilities/Packages/com.gemserk.triggers",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {}
+    },
+    "com.gemserk.triggers.extensions": {
+      "version": "file:../../unity-gemserk-utilities/Packages/com.gemserk.triggers.extensions",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {
+        "com.gemserk.utilities": "0.0.3",
+        "com.gemserk.triggers": "0.0.3",
+        "com.leoecscommunity.ecslite": "1.0.0",
+        "com.gemserk.leopotamecs": "0.2.3",
+        "com.domybest.mybox": "1.7.0"
+      }
+    },
+    "com.gemserk.uiguidesandrulers": {
+      "version": "https://github.com/acoppes/UnityUIGuidesAndRulers.git#package",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "b192fe694886ae615598be2d31d64ed327677414"
+    },
+    "com.gemserk.utilities": {
+      "version": "file:../../unity-gemserk-utilities/Packages/com.gemserk.utilities",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {}
+    },
+    "com.github-glitchenzo.nugetforunity": {
+      "version": "https://github.com/GlitchEnzo/NuGetForUnity.git?path=/src/NuGetForUnity",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "12574c32f658fa23c194357141abc3fc157ea362"
+    },
+    "com.leoecscommunity.ecslite": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://package.openupm.com"
+    },
+    "com.leoecscommunity.ecslite.di": {
+      "version": "https://github.com/LeoECSCommunity/ecslite-di.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "e70e4f982cb324204f80a60516a4a7dda5620aa3"
+    },
+    "com.leoecscommunity.ecslite.unityeditor": {
+      "version": "https://github.com/LeoECSCommunity/ecslite-unityeditor.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "2a8af59a6e15ecbd34783d32dbb37059e663e7f6"
+    },
+    "com.marijnzwemmer.unity-toolbar-extender": {
+      "version": "file:../../games/unity-packages/ToolbarExtender",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {}
+    },
+    "com.oss.leantween": {
+      "version": "2.50.4",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://package.openupm.com"
+    },
+    "com.tayx.graphy": {
+      "version": "3.0.5",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://package.openupm.com"
+    },
     "com.unity.2d.animation": {
       "version": "10.0.3",
       "depth": 1,
@@ -102,6 +246,16 @@
       },
       "url": "https://packages.unity.com"
     },
+    "com.unity.cinemachine": {
+      "version": "3.0.1",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.splines": "2.0.0",
+        "com.unity.test-framework": "1.1.33"
+      },
+      "url": "https://packages.unity.com"
+    },
     "com.unity.collab-proxy": {
       "version": "2.3.1",
       "depth": 0,
@@ -118,6 +272,13 @@
         "com.unity.nuget.mono-cecil": "1.11.4",
         "com.unity.test-framework": "1.1.31"
       },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.editorcoroutines": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
       "url": "https://packages.unity.com"
     },
     "com.unity.ext.nunit": {
@@ -143,7 +304,7 @@
       }
     },
     "com.unity.ide.rider": {
-      "version": "3.0.26",
+      "version": "3.0.28",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -157,6 +318,15 @@
       "source": "registry",
       "dependencies": {
         "com.unity.test-framework": "1.1.9"
+      },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.inputsystem": {
+      "version": "1.8.1",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.modules.uielements": "1.0.0"
       },
       "url": "https://packages.unity.com"
     },
@@ -215,6 +385,13 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
+    "com.unity.settings-manager": {
+      "version": "2.0.1",
+      "depth": 2,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
     "com.unity.shadergraph": {
       "version": "16.0.4",
       "depth": 1,
@@ -223,6 +400,17 @@
         "com.unity.render-pipelines.core": "16.0.4",
         "com.unity.searcher": "4.9.2"
       }
+    },
+    "com.unity.splines": {
+      "version": "2.5.1",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.settings-manager": "1.0.3",
+        "com.unity.mathematics": "1.2.1",
+        "com.unity.ugui": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
     },
     "com.unity.test-framework": {
       "version": "1.3.9",
@@ -265,6 +453,15 @@
         "com.unity.modules.jsonserialize": "1.0.0"
       },
       "url": "https://packages.unity.com"
+    },
+    "com.vertx.debugging": {
+      "version": "2.3.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.collections": "0.9.0-preview.6"
+      },
+      "url": "https://package.openupm.com"
     },
     "com.unity.modules.accessibility": {
       "version": "1.0.0",
