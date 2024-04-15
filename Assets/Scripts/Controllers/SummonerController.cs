@@ -1,5 +1,8 @@
-﻿using Game.Components;
-using Game.Controllers;
+﻿using System.Collections.Generic;
+using Components;
+using Game.Components;
+using Game.Components.Abilities;
+using Game.Utilities;
 using Gemserk.Leopotam.Ecs;
 using Gemserk.Leopotam.Ecs.Controllers;
 using Gemserk.Leopotam.Ecs.Events;
@@ -20,6 +23,7 @@ namespace Controllers
             ref var lookingDirection = ref entity.Get<LookingDirection>();
 
             ref var animations = ref entity.Get<AnimationComponent>();
+            ref var abilities = ref entity.Get<AbilitiesComponent>();
 
             movement.movingDirection = Vector3.zero;
             
@@ -61,6 +65,18 @@ namespace Controllers
                 {
                     animations.Play("StompHit", 1);
                     world.CreateEntity(stompImpulseDefinition);
+
+                    var activateStoneAbility = abilities.GetAbility("ActivateStone");
+                    var targets = new List<Target>();
+                    world.GetTargets(activateStoneAbility.GetRuntimeTargetingParameters(), targets);
+
+                    foreach (var target in targets)
+                    {
+                        ref var stone = ref  target.entity.Get<StoneComponent>();
+                        stone.on = true;
+                    }
+
+                    // search for near stone?
                 }
                 return;
             }

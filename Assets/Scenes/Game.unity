@@ -3834,6 +3834,61 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9070944182295245045, guid: 472b322571bacb34689fbcf7a3a351a7, type: 3}
   m_PrefabInstance: {fileID: 703634106}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &771525600
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 771525601}
+  - component: {fileID: 771525602}
+  m_Layer: 0
+  m_Name: Targeting
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &771525601
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 771525600}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2004154627}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &771525602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 771525600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc53ac743191464ebbe35487a3290ad9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targeting:
+    distanceType: 2
+    range:
+      Min: 0
+      Max: 0.5
+    playerAllianceType: -1
+    aliveType: 0
+    angle:
+      Min: 0
+      Max: 360
+    sorter: {fileID: 0}
 --- !u!1001 &783573034
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6978,6 +7033,7 @@ GameObject:
   - component: {fileID: 1644788233}
   - component: {fileID: 1644788232}
   - component: {fileID: 1644788231}
+  - component: {fileID: 1644788235}
   m_Layer: 0
   m_Name: Summoner_Definition
   m_TagString: Untagged
@@ -7000,6 +7056,7 @@ Transform:
   m_Children:
   - {fileID: 1848040457}
   - {fileID: 1962428870}
+  - {fileID: 1916158978}
   m_Father: {fileID: 665554724}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1644788224
@@ -7164,6 +7221,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   customButtonMap: []
   bufferTime: 0.2
+--- !u!114 &1644788235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644788222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fe43ae9f4bc4658a12d27dca71ced3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityDefinitions: []
+  abilitiesParent: {fileID: 1916158978}
 --- !u!1001 &1650906963
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8970,6 +9041,38 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9070944182295245045, guid: 472b322571bacb34689fbcf7a3a351a7, type: 3}
   m_PrefabInstance: {fileID: 1912707003}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1916158977
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1916158978}
+  m_Layer: 0
+  m_Name: Abilities
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1916158978
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916158977}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2004154627}
+  m_Father: {fileID: 1644788223}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1924803634
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9262,6 +9365,7 @@ GameObject:
   - component: {fileID: 1994458589}
   - component: {fileID: 1994458588}
   - component: {fileID: 1994458593}
+  - component: {fileID: 1994458594}
   m_Layer: 0
   m_Name: Button_Definition
   m_TagString: Untagged
@@ -9381,6 +9485,74 @@ MonoBehaviour:
   - {fileID: 21300000, guid: faa4726919b3de44895fa65f1043d5a5, type: 3}
   - {fileID: 21300000, guid: 6ee22c6230f875b46818fcd4d4db40fc, type: 3}
   - {fileID: 21300000, guid: 5706ded2160fbd549a20505c2f6737a5, type: 3}
+--- !u!114 &1994458594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1994458586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5de7c4458b6b4054826767f915b3af39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &2004154626
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2004154627}
+  - component: {fileID: 2004154628}
+  m_Layer: 0
+  m_Name: ActivateStone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2004154627
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2004154626}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 771525601}
+  m_Father: {fileID: 1916158978}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2004154628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2004154626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 355c2bdb380742b6b5e6ff65c177503e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityDefinition:
+    name: ActivateStone
+    cooldown: 0
+    startTime: 0
+    executionType: 0
+    cooldownType: 0
+    resetCooldownType: 0
+    startsLoaded: 1
+    autoTarget: 0
+    targeting: {fileID: 771525602}
+    charges: 0
 --- !u!1 &2009472294
 GameObject:
   m_ObjectHideFlags: 0

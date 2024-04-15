@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8475211302389053271}
   - component: {fileID: 6834118445799569970}
   m_Layer: 0
-  m_Name: ButtonModel
+  m_Name: StoneModel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33,6 +33,7 @@ Transform:
   m_Children:
   - {fileID: 4258507774719311074}
   - {fileID: 6846512979418113525}
+  - {fileID: 7428249258646527666}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8475211302389053271
@@ -236,3 +237,65 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
+--- !u!1001 &8313701391193820396
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4258507774620910416}
+    m_Modifications:
+    - target: {fileID: 1474438521856463454, guid: 63059ca6e5c281f41a3b353fd1e04544, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1474438521856463454, guid: 63059ca6e5c281f41a3b353fd1e04544, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1474438521856463454, guid: 63059ca6e5c281f41a3b353fd1e04544, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1474438521856463454, guid: 63059ca6e5c281f41a3b353fd1e04544, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1474438521856463454, guid: 63059ca6e5c281f41a3b353fd1e04544, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1474438521856463454, guid: 63059ca6e5c281f41a3b353fd1e04544, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1474438521856463454, guid: 63059ca6e5c281f41a3b353fd1e04544, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1474438521856463454, guid: 63059ca6e5c281f41a3b353fd1e04544, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1474438521856463454, guid: 63059ca6e5c281f41a3b353fd1e04544, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1474438521856463454, guid: 63059ca6e5c281f41a3b353fd1e04544, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1939964665193214751, guid: 63059ca6e5c281f41a3b353fd1e04544, type: 3}
+      propertyPath: m_Name
+      value: Stone_Particles
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 63059ca6e5c281f41a3b353fd1e04544, type: 3}
+--- !u!4 &7428249258646527666 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1474438521856463454, guid: 63059ca6e5c281f41a3b353fd1e04544, type: 3}
+  m_PrefabInstance: {fileID: 8313701391193820396}
+  m_PrefabAsset: {fileID: 0}

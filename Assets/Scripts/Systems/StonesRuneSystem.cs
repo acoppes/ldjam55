@@ -20,6 +20,16 @@ namespace Systems
 
                 var runeRenderer = model.instance.transform.Find("Rune").GetComponent<SpriteRenderer>();
                 runeRenderer.sprite = stone.runeSprites[stone.rune];
+
+                var onParticles = model.instance.transform.Find("Stone_Particles").GetComponent<ParticleSystem>();
+                
+                if (!onParticles.isPlaying && stone.on)
+                {
+                    onParticles.Play();
+                } else if (onParticles.isPlaying && !stone.on)
+                {
+                    onParticles.Stop();
+                } 
             }
         }
     }
