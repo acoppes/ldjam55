@@ -7,7 +7,7 @@ namespace Components
     {
         public int rune;
         public bool on;
-        public int order;
+        public float activeTime;
         public Sprite[] runeSprites;
     }
     

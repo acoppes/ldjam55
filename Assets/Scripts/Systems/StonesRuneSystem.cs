@@ -22,6 +22,15 @@ namespace Systems
                 runeRenderer.sprite = stone.runeSprites[stone.rune];
 
                 var onParticles = model.instance.transform.Find("Stone_Particles").GetComponent<ParticleSystem>();
+
+                if (!stone.on)
+                {
+                    stone.activeTime = 0;
+                }
+                else
+                {
+                    stone.activeTime += dt;
+                }
                 
                 if (!onParticles.isPlaying && stone.on)
                 {
