@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using Components;
 using Game;
@@ -31,6 +32,16 @@ public class GameLogic : MonoBehaviour
     public SignalAsset onCreatureSpawned;
 
     public List<CreatureSequence> sequences;
+
+    public ParticleSystem spawnPointA, spawnPointB;
+
+    public float spawnTime1, spawnTime2, spawnTime3 ;
+
+    private void Awake()
+    {
+        spawnPointA.Stop();
+        spawnPointB.Stop();
+    }
 
     public void Update()
     {
@@ -67,20 +78,34 @@ public class GameLogic : MonoBehaviour
 
     public void SpawnCreature()
     {
+        StartCoroutine(SpawnCreatureRoutine());
+    }
+
+    public IEnumerator SpawnCreatureRoutine()
+    {
         var world = worldReference.GetReference(gameObject);
         var emptySlots = world.GetEntities(emptySlotsQuery);
 
         if (emptySlots.Count == 0)
         {
             // CANT SPAWN MORE
-            return;
+            yield break;
         }
-
+        
         var runeSequence = world.GetSingleton<RuneSequenceComponent>();
         Debug.Log("SUMMONING SEQUENCE: " + runeSequence.summonWord);
 
         var specificCreature = sequences.Find(s => s.sequence.Equals(runeSequence.summonWord, StringComparison.OrdinalIgnoreCase));
         var randomSlot = emptySlots.Random();
+
+        spawnPointA.Play();
+        spawnPointB.transform.position = randomSlot.Get<PositionComponent>().value;
+        
+        yield return new WaitForSeconds(spawnTime1);
+        
+        spawnPointB.Play();
+        
+        yield return new WaitForSeconds(spawnTime2);
 
         var creatureEntity = world.CreateEntity(definition);
         creatureEntity.Get<PositionComponent>().value = randomSlot.Get<PositionComponent>().value;
@@ -99,15 +124,10 @@ public class GameLogic : MonoBehaviour
         }
         
         onCreatureSpawned.Signal(creatureEntity);
-
-      
         
-        // get runes in order
-
-        // detect creature
-
-        // get random free slot
-
-        // spawn creature there
+        yield return new WaitForSeconds(spawnTime3);
+        
+        spawnPointA.Stop();
+        spawnPointB.Stop();
     }
 }
