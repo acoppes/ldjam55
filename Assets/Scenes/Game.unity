@@ -4540,6 +4540,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1471067645}
   - {fileID: 1331355702}
   - {fileID: 1323305467}
   - {fileID: 1636695891}
@@ -5739,6 +5740,7 @@ Transform:
   - {fileID: 148839230}
   - {fileID: 1343423423}
   - {fileID: 1994458587}
+  - {fileID: 1032349137}
   - {fileID: 1637285784}
   - {fileID: 207020553}
   - {fileID: 1757519944}
@@ -7270,6 +7272,76 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9070944182295245045, guid: 472b322571bacb34689fbcf7a3a351a7, type: 3}
   m_PrefabInstance: {fileID: 1023838724}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1032349136
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1032349137}
+  - component: {fileID: 1032349139}
+  - component: {fileID: 1032349138}
+  - component: {fileID: 1032349140}
+  m_Layer: 0
+  m_Name: RuneSequence_Definition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1032349137
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032349136}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 665554724}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1032349138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032349136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7071695e6b84d6fa02b37da9eb1d58d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1032349139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032349136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ce8e965ed40431e993ca1982c595d6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1032349140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032349136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a090ea12e834aefb5cf7b1a206a9ecb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1057302934
 GameObject:
   m_ObjectHideFlags: 0
@@ -9895,6 +9967,7 @@ MonoBehaviour:
     name: 
     tag: 
   definition: {fileID: 390490636}
+  runesQuery: {fileID: 1902027474}
   emptySlotsQuery: {fileID: 726133338}
   onCreatureSpawned: {fileID: 11400000, guid: d67f7c85560391346a96c40e5a3fe8f7, type: 2}
 --- !u!1 &1445543480
@@ -9936,6 +10009,112 @@ Transform:
   - {fileID: 280214458}
   m_Father: {fileID: 142740192}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1471067644
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 530624556}
+    m_Modifications:
+    - target: {fileID: 9070944182295244809, guid: 472b322571bacb34689fbcf7a3a351a7, type: 3}
+      propertyPath: entityDefinition
+      value: 
+      objectReference: {fileID: 1032349139}
+    - target: {fileID: 9070944182295245042, guid: 472b322571bacb34689fbcf7a3a351a7, type: 3}
+      propertyPath: m_Name
+      value: Spawn(RuneSequence)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9070944182295245044, guid: 472b322571bacb34689fbcf7a3a351a7, type: 3}
+      propertyPath: singleton
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9070944182295245044, guid: 472b322571bacb34689fbcf7a3a351a7, type: 3}
+      propertyPath: entityName
+      value: RuneSequence
+      objectReference: {fileID: 0}
+    - target: {fileID: 9070944182295245044, guid: 472b322571bacb34689fbcf7a3a351a7, type: 3}
+      propertyPath: namingType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9070944182295245044, guid: 472b322571bacb34689fbcf7a3a351a7, type: 3}
+      propertyPath: positionType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9070944182295245044, guid: 472b322571bacb34689fbcf7a3a351a7, type: 3}
+      propertyPath: startLooping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9070944182295245044, guid: 472b322571bacb34689fbcf7a3a351a7, type: 3}
+      propertyPath: startingAnimation
+      value: Follower-1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9070944182295245044, guid: 472b322571bacb34689fbcf7a3a351a7, type: 3}
+      propertyPath: randomizeStartFrame
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9070944182295245044, guid: 472b322571bacb34689fbcf7a3a351a7, type: 3}
+      propertyPath: startingAnimationType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9070944182295245044, guid: 472b322571bacb34689fbcf7a3a351a7, type: 3}
+      propertyPath: startLookingDirection.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9070944182295245044, guid: 472b322571bacb34689fbcf7a3a351a7, type: 3}
+      propertyPath: overrideLookingDirection
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9070944182295245045, guid: 472b322571bacb34689fbcf7a3a351a7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.359
+      objectReference: {fileID: 0}
+    - target: {fileID: 9070944182295245045, guid: 472b322571bacb34689fbcf7a3a351a7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.148
+      objectReference: {fileID: 0}
+    - target: {fileID: 9070944182295245045, guid: 472b322571bacb34689fbcf7a3a351a7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9070944182295245045, guid: 472b322571bacb34689fbcf7a3a351a7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9070944182295245045, guid: 472b322571bacb34689fbcf7a3a351a7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9070944182295245045, guid: 472b322571bacb34689fbcf7a3a351a7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9070944182295245045, guid: 472b322571bacb34689fbcf7a3a351a7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9070944182295245045, guid: 472b322571bacb34689fbcf7a3a351a7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9070944182295245045, guid: 472b322571bacb34689fbcf7a3a351a7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9070944182295245045, guid: 472b322571bacb34689fbcf7a3a351a7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 472b322571bacb34689fbcf7a3a351a7, type: 3}
+--- !u!4 &1471067645 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9070944182295245045, guid: 472b322571bacb34689fbcf7a3a351a7, type: 3}
+  m_PrefabInstance: {fileID: 1471067644}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1495524059
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -30,7 +30,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 832571629237977674}
   - {fileID: 6159315613475449601}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -50,7 +49,6 @@ MonoBehaviour:
     type: 0
     name: 
     tag: 
-  runesQuery: {fileID: 6050298304983167129}
   runes:
   - {fileID: 2493956774027296871}
   - {fileID: 3876343384801830333}
@@ -227,91 +225,6 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!1 &6105966974385019657
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 832571629237977674}
-  - component: {fileID: 6050298304983167129}
-  - component: {fileID: 6692641152509774320}
-  - component: {fileID: 6353474669675440368}
-  - component: {fileID: 4708013556585287552}
-  m_Layer: 0
-  m_Name: Q(IsEnabled,name:Stone,Has(RuneStoneComponent))
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &832571629237977674
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6105966974385019657}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1464594489439989216}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6050298304983167129
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6105966974385019657}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce7ce591cb864d60b2aa284215d5d64a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &6692641152509774320
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6105966974385019657}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74435aabed51f7d4f8085d393b408599, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enabledType: 0
---- !u!114 &6353474669675440368
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6105966974385019657}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28ced4079912b8840b6d6ac59d2ebf5b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: Stone
---- !u!114 &4708013556585287552
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6105966974385019657}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72f04be1fad04796bbc702c1fc47e75d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &162732144393235410
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -322,7 +235,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2368458534750464949, guid: 66bca26f3ffa40944ae2f409fba7c48d, type: 3}
       propertyPath: active
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5486462628610273215, guid: 66bca26f3ffa40944ae2f409fba7c48d, type: 3}
       propertyPath: m_Pivot.x
@@ -439,7 +352,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2368458534750464949, guid: 66bca26f3ffa40944ae2f409fba7c48d, type: 3}
       propertyPath: active
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2368458534750464949, guid: 66bca26f3ffa40944ae2f409fba7c48d, type: 3}
       propertyPath: activeRune
@@ -560,7 +473,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2368458534750464949, guid: 66bca26f3ffa40944ae2f409fba7c48d, type: 3}
       propertyPath: active
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2368458534750464949, guid: 66bca26f3ffa40944ae2f409fba7c48d, type: 3}
       propertyPath: activeRune
@@ -681,7 +594,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2368458534750464949, guid: 66bca26f3ffa40944ae2f409fba7c48d, type: 3}
       propertyPath: active
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2368458534750464949, guid: 66bca26f3ffa40944ae2f409fba7c48d, type: 3}
       propertyPath: activeRune
@@ -802,7 +715,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2368458534750464949, guid: 66bca26f3ffa40944ae2f409fba7c48d, type: 3}
       propertyPath: active
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2368458534750464949, guid: 66bca26f3ffa40944ae2f409fba7c48d, type: 3}
       propertyPath: activeRune

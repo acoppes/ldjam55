@@ -73,6 +73,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rune_4
       objectReference: {fileID: 0}
+    - target: {fileID: 2015282653208637763, guid: 56e7fefadf694274f9801ab81cc6e857, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4766087762302227558, guid: 56e7fefadf694274f9801ab81cc6e857, type: 3}
       propertyPath: UVModule.sprites.Array.data[0].sprite
       value: 
@@ -143,6 +147,10 @@ PrefabInstance:
     - target: {fileID: 2015282653208637763, guid: 56e7fefadf694274f9801ab81cc6e857, type: 3}
       propertyPath: m_Name
       value: Rune_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2015282653208637763, guid: 56e7fefadf694274f9801ab81cc6e857, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4766087762302227558, guid: 56e7fefadf694274f9801ab81cc6e857, type: 3}
       propertyPath: UVModule.sprites.Array.data[0].sprite
@@ -215,6 +223,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rune_1
       objectReference: {fileID: 0}
+    - target: {fileID: 2015282653208637763, guid: 56e7fefadf694274f9801ab81cc6e857, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4766087762302227558, guid: 56e7fefadf694274f9801ab81cc6e857, type: 3}
       propertyPath: UVModule.sprites.Array.data[0].sprite
       value: 
@@ -286,6 +298,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rune_3
       objectReference: {fileID: 0}
+    - target: {fileID: 2015282653208637763, guid: 56e7fefadf694274f9801ab81cc6e857, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4766087762302227558, guid: 56e7fefadf694274f9801ab81cc6e857, type: 3}
       propertyPath: UVModule.sprites.Array.data[0].sprite
       value: 
@@ -356,6 +372,10 @@ PrefabInstance:
     - target: {fileID: 2015282653208637763, guid: 56e7fefadf694274f9801ab81cc6e857, type: 3}
       propertyPath: m_Name
       value: Rune_5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2015282653208637763, guid: 56e7fefadf694274f9801ab81cc6e857, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702266698975976114, guid: 56e7fefadf694274f9801ab81cc6e857, type: 3}
       propertyPath: m_LocalPosition.x

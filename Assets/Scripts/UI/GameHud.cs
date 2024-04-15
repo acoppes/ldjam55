@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Components;
+using Game;
 using Gemserk.Leopotam.Ecs;
-using Gemserk.Triggers.Queries;
 using UnityEngine;
 
 namespace UI
@@ -9,7 +9,6 @@ namespace UI
     public class GameHud : MonoBehaviour
     {
         public WorldReference worldReference;
-        public Query runesQuery;
         public List<RuneUI> runes;
 
         public bool inverted;
@@ -17,28 +16,22 @@ namespace UI
         private void LateUpdate()
         {
             var world = worldReference.GetReference(gameObject);
-            var runeEntities = world.GetEntities(runesQuery);
-            
-            runeEntities.Sort((e1, e2) =>
+            var runeSequence = world.GetSingleton<RuneSequenceComponent>();
+
+            if (runeSequence.orderedRunes.Count == 0)
             {
-                var t1 = e1.Get<RuneStoneComponent>().activeTime;
-                var t2 = e2.Get<RuneStoneComponent>().activeTime;
+                return;
+            }
 
-                if (t1 < t2)
-                    return inverted ? -1 : 1;
-                
-                if (t1 > t2)
-                    return inverted ? 1 : -1;
-
-                return 0;
-            });
-
-            for (var i = 0; i < runeEntities.Count; i++)
+            for (var i = 0; i < runeSequence.orderedRunes.Count; i++)
             {
-                var e = runeEntities[i];
+                var e = runeSequence.orderedRunes[i];
                 var stoneComponent = e.Get<RuneStoneComponent>();
-                runes[i].activeRune = stoneComponent.rune;
-                runes[i].active = stoneComponent.active;
+
+                var runeIndex = inverted ? runes.Count - i - 1: i;
+                
+                runes[runeIndex].activeRune = stoneComponent.rune;
+                runes[runeIndex].active = stoneComponent.active;
             }
         }
     }

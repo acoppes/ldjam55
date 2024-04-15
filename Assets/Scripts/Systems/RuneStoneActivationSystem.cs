@@ -1,10 +1,8 @@
 ﻿using Components;
-using Game.Components;
 using Gemserk.Leopotam.Ecs;
 using Gemserk.Utilities.Signals;
 using Leopotam.EcsLite;
 using Leopotam.EcsLite.Di;
-using UnityEngine;
 
 namespace Systems
 {
