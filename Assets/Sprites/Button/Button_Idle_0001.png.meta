@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f04cb2c76ed929b4b897eb121ee68f46
+guid: 85624298c7d89044197027826d878fe7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8539881394825191192
-    second: Runes_Button_0001_0
+      213: -3352236914672234352
+    second: Button_Idle_0001_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Runes_Button_0001_0
+      name: Button_Idle_0001_0
       rect:
         serializedVersion: 2
         x: 2
@@ -127,8 +127,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8e02a7d1e1f3c7980800000000000000
-      internalID: -8539881394825191192
+      spriteID: 090920a79467a71d0800000000000000
+      internalID: -3352236914672234352
       vertices: []
       indices: 
       edges: []
