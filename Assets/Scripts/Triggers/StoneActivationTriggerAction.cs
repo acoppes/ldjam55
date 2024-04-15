@@ -18,7 +18,7 @@ namespace Triggers
             {
                 foreach (var target in targets)
                 {
-                    target.Add(new StoneActivateComponent()
+                    target.Add(new RuneStoneActivateComponent()
                     {
                         activation = activate
                     });

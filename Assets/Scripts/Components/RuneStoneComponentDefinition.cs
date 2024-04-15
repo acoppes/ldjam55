@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Components
 {
-    public struct StoneComponent : IEntityComponent
+    public struct RuneStoneComponent : IEntityComponent
     {
         public int rune;
 
@@ -14,12 +14,12 @@ namespace Components
         public Sprite[] runeSprites;
     }
     
-    public struct StoneActivateComponent : IEntityComponent
+    public struct RuneStoneActivateComponent : IEntityComponent
     {
         public bool activation;
     }
     
-    public class StoneComponentDefinition : ComponentDefinitionBase
+    public class RuneStoneComponentDefinition : ComponentDefinitionBase
     {
         public int rune;
 
@@ -27,14 +27,14 @@ namespace Components
         
         public override string GetComponentName()
         {
-            return nameof(StoneComponent);
+            return nameof(RuneStoneComponent);
         }
 
         public override void Apply(World world, Entity entity)
         {
-            if (!world.HasComponent<StoneComponent>(entity))
+            if (!world.HasComponent<RuneStoneComponent>(entity))
             {
-                world.AddComponent(entity, new StoneComponent()
+                world.AddComponent(entity, new RuneStoneComponent()
                 {
                     rune = rune,
                     runeSprites = runeSprites
@@ -42,7 +42,7 @@ namespace Components
             }
             else
             {
-                ref var stone = ref entity.Get<StoneComponent>();
+                ref var stone = ref entity.Get<RuneStoneComponent>();
                 stone.rune = rune;
             }
         }

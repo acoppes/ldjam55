@@ -12,7 +12,7 @@ namespace Systems
     { 
         public SignalAsset onStoneActivated;
          
-        readonly EcsFilterInject<Inc<StoneComponent, StoneActivateComponent>, Exc<DisabledComponent>> activateStonesFilter = default;
+        readonly EcsFilterInject<Inc<RuneStoneComponent, RuneStoneActivateComponent>, Exc<DisabledComponent>> activateStonesFilter = default;
         
         public void Run(EcsSystems systems)
         {
@@ -24,9 +24,15 @@ namespace Systems
                 stone.wasActive = stone.active;
                 stone.active = stoneActivation.activation;
                 
-                onStoneActivated.Signal(world.GetEntity(e));
+                if (!stone.wasActive && stone.active)
+                {
+                    onStoneActivated.Signal(world.GetEntity(e));
+                } else if (stone.wasActive && !stone.active)
+                {
+                    onStoneActivated.Signal(world.GetEntity(e));
+                }
                 
-                world.RemoveComponent<StoneActivateComponent>(e);
+                world.RemoveComponent<RuneStoneActivateComponent>(e);
             }
         }
     }

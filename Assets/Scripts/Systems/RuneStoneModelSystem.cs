@@ -9,7 +9,7 @@ namespace Systems
 {
     public class RuneStoneModelSystem : BaseSystem, IEcsRunSystem
     { 
-        readonly EcsFilterInject<Inc<ModelComponent, StoneComponent>, Exc<DisabledComponent>> filter = default;
+        readonly EcsFilterInject<Inc<ModelComponent, RuneStoneComponent>, Exc<DisabledComponent>> filter = default;
         
         public void Run(EcsSystems systems)
         {

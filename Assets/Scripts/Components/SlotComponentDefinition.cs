@@ -6,6 +6,7 @@ namespace Components
     public struct SlotComponent : IEntityComponent
     {
         public Entity owner;
+        public bool isEmpty => !owner.Exists();
     }
     
     public class SlotComponentDefinition : ComponentDefinitionBase

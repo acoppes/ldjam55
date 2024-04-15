@@ -73,7 +73,7 @@ namespace Controllers
                     foreach (var target in targets)
                     {
                         // ref var stone = ref  target.entity.Get<StoneComponent>();
-                        target.entity.Add(new StoneActivateComponent()
+                        target.entity.Add(new RuneStoneActivateComponent()
                         {
                             activation = true
                         });

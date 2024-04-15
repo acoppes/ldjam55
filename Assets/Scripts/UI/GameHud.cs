@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Components;
 using Gemserk.Leopotam.Ecs;
 using Gemserk.Triggers.Queries;
@@ -22,8 +21,8 @@ namespace UI
             
             runeEntities.Sort((e1, e2) =>
             {
-                var t1 = e1.Get<StoneComponent>().activeTime;
-                var t2 = e2.Get<StoneComponent>().activeTime;
+                var t1 = e1.Get<RuneStoneComponent>().activeTime;
+                var t2 = e2.Get<RuneStoneComponent>().activeTime;
 
                 if (t1 < t2)
                     return inverted ? -1 : 1;
@@ -37,7 +36,7 @@ namespace UI
             for (var i = 0; i < runeEntities.Count; i++)
             {
                 var e = runeEntities[i];
-                var stoneComponent = e.Get<StoneComponent>();
+                var stoneComponent = e.Get<RuneStoneComponent>();
                 runes[i].activeRune = stoneComponent.rune;
                 runes[i].active = stoneComponent.active;
             }
