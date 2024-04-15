@@ -108,7 +108,7 @@ public class GameLogic : MonoBehaviour
         yield return new WaitForSeconds(spawnTime2);
 
         var creatureEntity = world.CreateEntity(definition);
-        creatureEntity.Get<PositionComponent>().value = randomSlot.Get<PositionComponent>().value;
+        creatureEntity.Get<PositionComponent>().value = randomSlot.Get<PositionComponent>().value + new Vector3(0, 0, 0.1f);
 
         randomSlot.Get<SlotComponent>().owner = creatureEntity;
         
