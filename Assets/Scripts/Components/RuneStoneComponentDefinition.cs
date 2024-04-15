@@ -6,6 +6,7 @@ namespace Components
     public struct RuneStoneComponent : IEntityComponent
     {
         public int rune;
+        public string runeKey;
 
         public bool wasActive;
         public bool active;
@@ -22,6 +23,7 @@ namespace Components
     public class RuneStoneComponentDefinition : ComponentDefinitionBase
     {
         public int rune;
+        public string runeKey;
 
         public Sprite[] runeSprites;
         
@@ -37,6 +39,7 @@ namespace Components
                 world.AddComponent(entity, new RuneStoneComponent()
                 {
                     rune = rune,
+                    runeKey = runeKey,
                     runeSprites = runeSprites
                 });
             }
@@ -44,6 +47,7 @@ namespace Components
             {
                 ref var stone = ref entity.Get<RuneStoneComponent>();
                 stone.rune = rune;
+                stone.runeKey = runeKey;
             }
         }
     }
