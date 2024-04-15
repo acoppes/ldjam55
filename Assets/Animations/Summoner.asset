@@ -34,6 +34,12 @@ MonoBehaviour:
       time: 0.083333336
     - sprite: {fileID: 21300000, guid: 45da061eb6dc30a4b91a5f66ef0280f3, type: 3}
       time: 0.083333336
+    - sprite: {fileID: 21300000, guid: aab334e9f386957408eb0c702af10774, type: 3}
+      time: 0.083333336
+    - sprite: {fileID: 21300000, guid: 006f8b79a0eb3614cb510931b2cad909, type: 3}
+      time: 0.083333336
+    - sprite: {fileID: 21300000, guid: 8fbaddc4727c161429a099fe834f98ef, type: 3}
+      time: 0.083333336
   - name: Temp
     frames:
     - sprite: {fileID: 21300000, guid: aad3468f432ce894c942e0c5aa69e83f, type: 3}

@@ -18,12 +18,16 @@ namespace Controllers
         {
             var input = entity.Get<InputComponent>();
             ref var movement = ref entity.Get<MovementComponent>();
+            ref var lookingDirection = ref entity.Get<LookingDirection>();
+
             ref var animations = ref entity.Get<AnimationComponent>();
 
             movement.movingDirection = input.direction3d();
 
             if (movement.movingDirection.sqrMagnitude > 0.1f)
             {
+                lookingDirection.value = movement.movingDirection.normalized;
+                
                 if (!animations.IsPlaying("Walk-0"))
                 {
                     animations.Play("Walk-0");
