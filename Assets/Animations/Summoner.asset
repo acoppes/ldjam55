@@ -50,17 +50,19 @@ MonoBehaviour:
       time: 0.083333336
     - sprite: {fileID: 21300000, guid: fa23a86fb265e504cbac2d1054046b72, type: 3}
       time: 0.083333336
-    - sprite: {fileID: 21300000, guid: 83370ddb7ec8e184d93a58caaebc9bf7, type: 3}
+  - name: StompHit
+    frames:
+    - sprite: {fileID: 21300000, guid: 9ac26a87dd63d584a97b012f8605353d, type: 3}
       time: 0.083333336
-    - sprite: {fileID: 21300000, guid: 8fdd810e38e5dc846a0dafe1ad358550, type: 3}
+    - sprite: {fileID: 21300000, guid: b73b8d31a9976b24a82d1f35406c158d, type: 3}
       time: 0.083333336
-    - sprite: {fileID: 21300000, guid: e1df2dda0b39c8d41bbda625e8bdeb57, type: 3}
-      time: 0.083333336
-    - sprite: {fileID: 21300000, guid: d57bc233ad774a349ae6643bbe17587d, type: 3}
+    - sprite: {fileID: 21300000, guid: b3494a9b610472a4aa518a3a1366f395, type: 3}
       time: 0.083333336
   - name: StompStart
     frames:
     - sprite: {fileID: 21300000, guid: 678c68a34b5918140a994f2d666fa9c2, type: 3}
+      time: 0.083333336
+    - sprite: {fileID: 21300000, guid: 273172dfe5cf68441a63907f6d1e7645, type: 3}
       time: 0.083333336
   - name: Temp
     frames:

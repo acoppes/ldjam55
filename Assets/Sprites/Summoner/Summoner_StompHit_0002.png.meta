@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d57bc233ad774a349ae6643bbe17587d
+guid: b73b8d31a9976b24a82d1f35406c158d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1593750449002676641
-    second: Summoner_StompEnd_0006_0
+      213: -7264875879853310730
+    second: Summoner_StompHit_0002_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Summoner_StompEnd_0006_0
+      name: Summoner_StompHit_0002_0
       rect:
         serializedVersion: 2
         x: 10
         y: 30
         width: 13
-        height: 17
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,8 +127,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1a18c6dd6932e1610800000000000000
-      internalID: 1593750449002676641
+      spriteID: 6fc3a04d0e9fd2b90800000000000000
+      internalID: -7264875879853310730
       vertices: []
       indices: 
       edges: []

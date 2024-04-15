@@ -40,8 +40,17 @@ namespace Controllers
                 if (!input.button1().isPressed)
                 {
                     animations.Play("StompEnd", 1);
-                    world.CreateEntity(stompImpulseDefinition);
+                  
                     return;
+                }
+                return;
+            }
+            
+            if (animations.IsPlaying("StompHit"))
+            {
+                if (animations.isCompleted)
+                {
+                    animations.Play("StompCharge");
                 }
                 return;
             }
@@ -50,7 +59,8 @@ namespace Controllers
             {
                 if (animations.isCompleted)
                 {
-                    animations.Play("StompCharge");
+                    animations.Play("StompHit", 1);
+                    world.CreateEntity(stompImpulseDefinition);
                 }
                 return;
             }
