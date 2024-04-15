@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43476aec9d91461b89f0964aa65efc4e, type: 3}
+  m_Name: Summoner
+  m_EditorClassIdentifier: 
+  sourceFolder: Assets\Sprites\Summoner
+  animations:
+  - name: Idle-0
+    frames:
+    - sprite: {fileID: 21300000, guid: 55ce09d81dd099e4ea2e56e82d101b91, type: 3}
+      time: 0.083333336
+    - sprite: {fileID: 21300000, guid: a0ecb31006ddeeb4b8e59b6fa4ffb27c, type: 3}
+      time: 0.083333336
+    - sprite: {fileID: 21300000, guid: 6ce979a2bfc47f4499066ce8f62b970d, type: 3}
+      time: 0.083333336
+    - sprite: {fileID: 21300000, guid: 8413746c5eff54848ad474b1a10746ba, type: 3}
+      time: 0.083333336
+    - sprite: {fileID: 21300000, guid: 3047b97fbbe9edf47a8840a3074455d9, type: 3}
+      time: 0.083333336
+    - sprite: {fileID: 21300000, guid: bb9c8d5e51816a04ab6205acf1e0e023, type: 3}
+      time: 0.083333336
+    - sprite: {fileID: 21300000, guid: 23ff2e185e90d9d4a8c5d3da0af779a6, type: 3}
+      time: 0.083333336
+    - sprite: {fileID: 21300000, guid: 0bc469422d0ea8e4cb7f3ea0328fc28a, type: 3}
+      time: 0.083333336
+    - sprite: {fileID: 21300000, guid: 45da061eb6dc30a4b91a5f66ef0280f3, type: 3}
+      time: 0.083333336
+  - name: Temp
+    frames:
+    - sprite: {fileID: 21300000, guid: aad3468f432ce894c942e0c5aa69e83f, type: 3}
+      time: 0.083333336
+  - name: Walk-0
+    frames:
+    - sprite: {fileID: 21300000, guid: 5829c45d074dfc444b8034c19fe92968, type: 3}
+      time: 0.083333336
+    - sprite: {fileID: 21300000, guid: 7844580a23d53d948a8c5b932cb1777f, type: 3}
+      time: 0.083333336
+    - sprite: {fileID: 21300000, guid: 48eb917537e945b4ea4e8717567a7773, type: 3}
+      time: 0.083333336
+    - sprite: {fileID: 21300000, guid: bb86c30a398a0344c89a5312a14fd7b7, type: 3}
+      time: 0.083333336
+    - sprite: {fileID: 21300000, guid: 6bbcef657c7875b4c923d5698427e4e6, type: 3}
+      time: 0.083333336
+    - sprite: {fileID: 21300000, guid: 97b006da467ba1542bba5ea26ec505d0, type: 3}
+      time: 0.083333336

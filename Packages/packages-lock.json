@@ -96,13 +96,6 @@
       "source": "local",
       "dependencies": {}
     },
-    "com.github-glitchenzo.nugetforunity": {
-      "version": "https://github.com/GlitchEnzo/NuGetForUnity.git?path=/src/NuGetForUnity",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "12574c32f658fa23c194357141abc3fc157ea362"
-    },
     "com.leoecscommunity.ecslite": {
       "version": "1.0.0",
       "depth": 0,
