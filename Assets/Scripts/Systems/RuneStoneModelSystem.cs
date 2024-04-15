@@ -7,8 +7,8 @@ using UnityEngine;
 
 namespace Systems
 {
-     public class StonesRuneSystem : BaseSystem, IEcsRunSystem
-    {
+    public class RuneStoneModelSystem : BaseSystem, IEcsRunSystem
+    { 
         readonly EcsFilterInject<Inc<ModelComponent, StoneComponent>, Exc<DisabledComponent>> filter = default;
         
         public void Run(EcsSystems systems)
@@ -23,7 +23,7 @@ namespace Systems
 
                 var onParticles = model.instance.transform.Find("Stone_Particles").GetComponent<ParticleSystem>();
 
-                if (!stone.on)
+                if (!stone.active)
                 {
                     stone.activeTime = 0;
                 }
@@ -32,10 +32,10 @@ namespace Systems
                     stone.activeTime += dt;
                 }
                 
-                if (!onParticles.isPlaying && stone.on)
+                if (!onParticles.isPlaying && stone.active)
                 {
                     onParticles.Play();
-                } else if (onParticles.isPlaying && !stone.on)
+                } else if (onParticles.isPlaying && !stone.active)
                 {
                     onParticles.Stop();
                 } 

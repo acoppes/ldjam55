@@ -72,8 +72,12 @@ namespace Controllers
 
                     foreach (var target in targets)
                     {
-                        ref var stone = ref  target.entity.Get<StoneComponent>();
-                        stone.on = true;
+                        // ref var stone = ref  target.entity.Get<StoneComponent>();
+                        target.entity.Add(new StoneActivateComponent()
+                        {
+                            activation = true
+                        });
+                        // stone.on = true;
                     }
 
                     // search for near stone?

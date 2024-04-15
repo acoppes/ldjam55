@@ -39,7 +39,7 @@ namespace UI
                 var e = runeEntities[i];
                 var stoneComponent = e.Get<StoneComponent>();
                 runes[i].activeRune = stoneComponent.rune;
-                runes[i].active = stoneComponent.on;
+                runes[i].active = stoneComponent.active;
             }
         }
     }
