@@ -26,3 +26,71 @@ MonoBehaviour:
     frames:
     - sprite: {fileID: 21300000, guid: ce9dc1f1a1a69224db15d71e5f576cf2, type: 3}
       time: 0.083333336
+  - name: C4
+    frames:
+    - sprite: {fileID: 21300000, guid: fc45752a5b20f474ba14fff213086fc0, type: 3}
+      time: 0.083333336
+  - name: C5
+    frames:
+    - sprite: {fileID: 21300000, guid: 015347422ddc356429f25ca4ae35ffc6, type: 3}
+      time: 0.083333336
+  - name: C6
+    frames:
+    - sprite: {fileID: 21300000, guid: 11307ecc974afbc48b09f58c6c87795e, type: 3}
+      time: 0.083333336
+  - name: C7
+    frames:
+    - sprite: {fileID: 21300000, guid: 0cdeda489e2476a4eb61fa77fd11701c, type: 3}
+      time: 0.083333336
+  - name: C8
+    frames:
+    - sprite: {fileID: 21300000, guid: d8b9ad7c7f4755e4cadb3dba1e8a4e88, type: 3}
+      time: 0.083333336
+  - name: C9
+    frames:
+    - sprite: {fileID: 21300000, guid: 22d0e4ca27e226443b6f060fd01f21fa, type: 3}
+      time: 0.083333336
+  - name: C10
+    frames:
+    - sprite: {fileID: 21300000, guid: 5e291da280399034e9dde04fcd85c768, type: 3}
+      time: 0.083333336
+  - name: C11
+    frames:
+    - sprite: {fileID: 21300000, guid: 57646e908356e8b4ea41c249a16cda51, type: 3}
+      time: 0.083333336
+  - name: C12
+    frames:
+    - sprite: {fileID: 21300000, guid: 6c0d4473eb67fcd4bb4d7ab979280e68, type: 3}
+      time: 0.083333336
+  - name: C13
+    frames:
+    - sprite: {fileID: 21300000, guid: 17c5665c17ce67b4e9aa4469ee74384e, type: 3}
+      time: 0.083333336
+  - name: C14
+    frames:
+    - sprite: {fileID: 21300000, guid: ae16de800b55cbc48aac00d32d9cf135, type: 3}
+      time: 0.083333336
+  - name: C15
+    frames:
+    - sprite: {fileID: 21300000, guid: 14478d2522fc3bd45825c1ee46629eeb, type: 3}
+      time: 0.083333336
+  - name: C16
+    frames:
+    - sprite: {fileID: 21300000, guid: db1d9359d0b198145b0953467b3f9861, type: 3}
+      time: 0.083333336
+  - name: C17
+    frames:
+    - sprite: {fileID: 21300000, guid: 8a7bc7b3c89a8014bb2074e6a6de82f3, type: 3}
+      time: 0.083333336
+  - name: C18
+    frames:
+    - sprite: {fileID: 21300000, guid: 292f765b3915c66438fca41f824eeb33, type: 3}
+      time: 0.083333336
+  - name: C19
+    frames:
+    - sprite: {fileID: 21300000, guid: 1d428e403fe121346ba69f76a5d3bd4d, type: 3}
+      time: 0.083333336
+  - name: C20
+    frames:
+    - sprite: {fileID: 21300000, guid: 57c9402b897502f4faa30d41f2f17b15, type: 3}
+      time: 0.083333336

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Components;
 using Game;
 using Game.Components;
@@ -8,6 +9,7 @@ using Gemserk.Leopotam.Ecs;
 using Gemserk.Triggers.Queries;
 using Gemserk.Utilities;
 using Gemserk.Utilities.Signals;
+using MyBox;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
@@ -26,6 +28,8 @@ public class GameLogic : MonoBehaviour
     [ObjectType(typeof(IEntityDefinition), filterString = "Definition")]
     public Object definition;
 
+    public string defaultAnim = "C10";
+
     public Query runesQuery;
     public Query emptySlotsQuery;
 
@@ -36,6 +40,8 @@ public class GameLogic : MonoBehaviour
     public ParticleSystem spawnPointA, spawnPointB;
 
     public float spawnTime1, spawnTime2, spawnTime3 ;
+
+    public int maxSequences = 20;
 
     private void Awake()
     {
@@ -76,6 +82,40 @@ public class GameLogic : MonoBehaviour
 
     }
 
+    private string GenerateWord()
+    {
+        string[] letters = new string[]
+        {
+            "A", "B", "C", "D", "E"
+        };
+
+        var word = string.Empty;
+        do
+        {
+            var numbers = new int[] {0, 1, 2, 3, 4};
+            numbers.Shuffle();
+            word = letters[numbers[0]] + letters[numbers[1]] + letters[numbers[2]] + letters[numbers[3]] +
+                   letters[numbers[4]];
+        } while (sequences.Count(s => s.sequence.Equals(word)) > 0);
+        
+        return word;
+    }
+
+    [ButtonMethod]
+    public void CreateRandomSequences()
+    {
+        sequences.Clear();
+
+        for (int i = 0; i < maxSequences; i++)
+        {
+            sequences.Add(new CreatureSequence()
+            {
+                sequence = GenerateWord(),
+                anim = $"C{i+1}"
+            });
+        }
+    }
+
     public void SpawnCreature()
     {
         StartCoroutine(SpawnCreatureRoutine());
@@ -108,7 +148,7 @@ public class GameLogic : MonoBehaviour
         yield return new WaitForSeconds(spawnTime2);
 
         var creatureEntity = world.CreateEntity(definition);
-        creatureEntity.Get<PositionComponent>().value = randomSlot.Get<PositionComponent>().value + new Vector3(0, 0, 0.1f);
+        creatureEntity.Get<PositionComponent>().value = randomSlot.Get<PositionComponent>().value + new Vector3(0, 0, 0);
 
         randomSlot.Get<SlotComponent>().owner = creatureEntity;
         
@@ -119,6 +159,15 @@ public class GameLogic : MonoBehaviour
             {
                 startingAnimationType = StartingAnimationComponent.StartingAnimationType.Name,
                 name = specificCreature.anim,
+                loop = true,
+            });
+        }
+        else
+        {
+            creatureEntity.Add(new StartingAnimationComponent()
+            {
+                startingAnimationType = StartingAnimationComponent.StartingAnimationType.Name,
+                name = defaultAnim,
                 loop = true,
             });
         }

@@ -752,7 +752,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99954465c2014750bcdae15766be78f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: 84fe0eea13eb20e4d931ce1dd29d33d1, type: 3}
+  clip: {fileID: 8300000, guid: 9407bd414cec7684cbe9635855c3b2b1, type: 3}
   prefab: {fileID: 0}
   autoDestroyOnComplete: 1
   volume: 1
@@ -1887,6 +1887,51 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4676617954791551970, guid: 31d47614e79e5364d8068fac92cb0869, type: 3}
   m_PrefabInstance: {fileID: 261233987}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &268311120
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 268311121}
+  - component: {fileID: 268311122}
+  m_Layer: 0
+  m_Name: InstantiateEntity(Spawn(Sfx_CreatureSpawn))
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &268311121
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 268311120}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1871055729}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &268311122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 268311120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4af75044c063416f8b7a530181619b00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  entityInstance: {fileID: 597328593}
 --- !u!1001 &275041648
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5345,6 +5390,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   signal: {fileID: 11400000, guid: f6b2355b278409841bed511165b67221, type: 2}
+--- !u!1 &597328593 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9070944182295245042, guid: 472b322571bacb34689fbcf7a3a351a7, type: 3}
+  m_PrefabInstance: {fileID: 892105842}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &620898501
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6838,14 +6888,14 @@ PrefabInstance:
     - target: {fileID: 9070944182295244809, guid: 472b322571bacb34689fbcf7a3a351a7, type: 3}
       propertyPath: entityDefinition
       value: 
-      objectReference: {fileID: 207020556}
+      objectReference: {fileID: 58047087}
     - target: {fileID: 9070944182295244809, guid: 472b322571bacb34689fbcf7a3a351a7, type: 3}
       propertyPath: instantiationType
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9070944182295245042, guid: 472b322571bacb34689fbcf7a3a351a7, type: 3}
       propertyPath: m_Name
-      value: Spawn(Sfx_Start)
+      value: Spawn(Sfx_CreatureSpawn)
       objectReference: {fileID: 0}
     - target: {fileID: 9070944182295245044, guid: 472b322571bacb34689fbcf7a3a351a7, type: 3}
       propertyPath: singleton
@@ -6853,7 +6903,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9070944182295245044, guid: 472b322571bacb34689fbcf7a3a351a7, type: 3}
       propertyPath: entityName
-      value: Sfx_Start
+      value: Sfx_CreatureSpawn
       objectReference: {fileID: 0}
     - target: {fileID: 9070944182295245044, guid: 472b322571bacb34689fbcf7a3a351a7, type: 3}
       propertyPath: namingType
@@ -8055,7 +8105,7 @@ GameObject:
   - component: {fileID: 1131064613}
   - component: {fileID: 1131064614}
   m_Layer: 0
-  m_Name: OnCreatureSpawned_Restart (1)
+  m_Name: OnCreatureSpawned_Sfx
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10456,19 +10506,57 @@ MonoBehaviour:
     name: 
     tag: 
   definition: {fileID: 390490636}
+  defaultAnim: C10
   runesQuery: {fileID: 1902027474}
   emptySlotsQuery: {fileID: 726133338}
   onCreatureSpawned: {fileID: 11400000, guid: d67f7c85560391346a96c40e5a3fe8f7, type: 2}
   sequences:
-  - sequence: ABCDE
+  - sequence: DEBCA
+    anim: C1
+  - sequence: EDCAB
     anim: C2
-  - sequence: EBDAC
+  - sequence: BDEAC
     anim: C3
+  - sequence: BAEDC
+    anim: C4
+  - sequence: ECABD
+    anim: C5
+  - sequence: BECAD
+    anim: C6
+  - sequence: DCAEB
+    anim: C7
+  - sequence: BADCE
+    anim: C8
+  - sequence: BDAEC
+    anim: C9
+  - sequence: EBDAC
+    anim: C10
+  - sequence: BDCEA
+    anim: C11
+  - sequence: DBCAE
+    anim: C12
+  - sequence: BCEDA
+    anim: C13
+  - sequence: DCABE
+    anim: C14
+  - sequence: CBEAD
+    anim: C15
+  - sequence: DACEB
+    anim: C16
+  - sequence: ABDCE
+    anim: C17
+  - sequence: EBDCA
+    anim: C18
+  - sequence: ACEDB
+    anim: C19
+  - sequence: ADECB
+    anim: C20
   spawnPointA: {fileID: 261233988}
   spawnPointB: {fileID: 1018328668}
   spawnTime1: 2
   spawnTime2: 2
   spawnTime3: 1
+  maxSequences: 20
 --- !u!1 &1445543480
 GameObject:
   m_ObjectHideFlags: 0
@@ -14133,7 +14221,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 268311121}
   m_Father: {fileID: 1131064613}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1874773821 stripped
