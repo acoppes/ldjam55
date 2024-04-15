@@ -1,18 +1,17 @@
-﻿using Game;
-using Game.Components;
+﻿using Game.Components;
+using Game.Controllers;
 using Gemserk.Leopotam.Ecs;
-using Gemserk.Leopotam.Ecs.Components;
 using Gemserk.Leopotam.Ecs.Controllers;
 using Gemserk.Leopotam.Ecs.Events;
+using Gemserk.Utilities;
+using UnityEngine;
 
 namespace Controllers
 {
-    public class SummonerController : ControllerBase, IUpdate, IInit, IStateChanged
+    public class SummonerController : ControllerBase, IUpdate
     {
-        public void OnInit(World world, Entity entity)
-        {
-           
-        }
+        [ObjectType(typeof(IEntityDefinition), filterString = "Definition")]
+        public Object stompImpulseDefinition; 
         
         public void OnUpdate(World world, Entity entity, float dt)
         {
@@ -22,6 +21,46 @@ namespace Controllers
 
             ref var animations = ref entity.Get<AnimationComponent>();
 
+            movement.movingDirection = Vector3.zero;
+            
+            if (animations.IsPlaying("StompEnd"))
+            {
+                // do something here
+                
+                // 
+
+                if (!animations.isCompleted)
+                {
+                    return;
+                }
+            }
+            
+            if (animations.IsPlaying("StompCharge"))
+            {
+                if (!input.button1().isPressed)
+                {
+                    animations.Play("StompEnd", 1);
+                    world.CreateEntity(stompImpulseDefinition);
+                    return;
+                }
+                return;
+            }
+            
+            if (animations.IsPlaying("StompStart"))
+            {
+                if (animations.isCompleted)
+                {
+                    animations.Play("StompCharge");
+                }
+                return;
+            }
+
+            if (input.button1().isPressed)
+            {
+                animations.Play("StompStart", 1);
+                return;
+            }
+            
             movement.movingDirection = input.direction3d();
 
             if (movement.movingDirection.sqrMagnitude > 0.1f)
@@ -40,17 +79,6 @@ namespace Controllers
                     animations.Play("Idle-0");
                 }
             }
-        }
-
-
-        public void OnEnterState(World world, Entity entity)
-        {
-           
-        }
-
-        public void OnExitState(World world, Entity entity)
-        {
-          
         }
     }
 }

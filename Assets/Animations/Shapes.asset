@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43476aec9d91461b89f0964aa65efc4e, type: 3}
+  m_Name: Shapes
+  m_EditorClassIdentifier: 
+  sourceFolder: Assets\Sprites\Shapes
+  animations:
+  - name: Cursor
+    frames:
+    - sprite: {fileID: 21300000, guid: 275d1e5424a46544dbe323620c7d98f4, type: 3}
+      time: 0.083333336
+  - name: FootStep
+    frames:
+    - sprite: {fileID: 21300000, guid: f519340f9530d424384c1b6dbe4a0e40, type: 3}
+      time: 0.083333336
+  - name: Selection
+    frames:
+    - sprite: {fileID: 21300000, guid: 094da85142ce0364cb9cde07987d6f70, type: 3}
+      time: 0.083333336
+    - sprite: {fileID: 21300000, guid: 3a3aed10de0660e468dcdd7f5f324086, type: 3}
+      time: 0.083333336
+  - name: Shadow
+    frames:
+    - sprite: {fileID: 21300000, guid: b6d5088783a9a804e9bf192d84fedff9, type: 3}
+      time: 0.083333336
+  - name: ShadowMedium
+    frames:
+    - sprite: {fileID: 21300000, guid: fc3eda1bd16ccba41839532aaa686dba, type: 3}
+      time: 0.083333336
+  - name: ShadowSmall
+    frames:
+    - sprite: {fileID: 21300000, guid: 62899cacad98ffa43b46c251c5fd5e36, type: 3}
+      time: 0.083333336
+  - name: Shape
+    frames:
+    - sprite: {fileID: 21300000, guid: 1113e5ea27c35a64bbc93146759befc9, type: 3}
+      time: 0.083333336
+    - sprite: {fileID: 21300000, guid: e73fdbe8695460c44bfab5e248ca98b8, type: 3}
+      time: 0.083333336
+    - sprite: {fileID: 21300000, guid: d66438685843d9a4893a27e8d34a14fd, type: 3}
+      time: 0.083333336
+    - sprite: {fileID: 21300000, guid: ed02f0b38b5dd9442b8116fc094cc871, type: 3}
+      time: 0.083333336
+    - sprite: {fileID: 21300000, guid: 19f43ddb16498a340ac2740a433358cf, type: 3}
+      time: 0.083333336
+    - sprite: {fileID: 21300000, guid: e1920b296e5aa7e449ee2eb182b726ba, type: 3}
+      time: 0.083333336
+    - sprite: {fileID: 21300000, guid: 50ef433a950d4a14381480c4c73f7e5e, type: 3}
+      time: 0.083333336
+    - sprite: {fileID: 21300000, guid: c554dc641f9235647a69d41e1a8f2c40, type: 3}
+      time: 0.083333336
+    - sprite: {fileID: 21300000, guid: 298ff51cd473ac345b483ce513874c78, type: 3}
+      time: 0.083333336
+    - sprite: {fileID: 21300000, guid: 8a88219ef25eaad408e56695d937e0b8, type: 3}
+      time: 0.083333336
+    - sprite: {fileID: 21300000, guid: ae12b405dbc9a564f8540e3b6bc3c60a, type: 3}
+      time: 0.083333336
+    - sprite: {fileID: 21300000, guid: 222c37c458459aa409b0373590044e55, type: 3}
+      time: 0.083333336

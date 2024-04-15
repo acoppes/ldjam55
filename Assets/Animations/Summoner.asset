@@ -40,6 +40,28 @@ MonoBehaviour:
       time: 0.083333336
     - sprite: {fileID: 21300000, guid: 8fbaddc4727c161429a099fe834f98ef, type: 3}
       time: 0.083333336
+  - name: StompCharge
+    frames:
+    - sprite: {fileID: 21300000, guid: 2f93264061a729145a14c31b287cccfd, type: 3}
+      time: 0.083333336
+  - name: StompEnd
+    frames:
+    - sprite: {fileID: 21300000, guid: dd74d22fee9bba34faf72ada2f77468f, type: 3}
+      time: 0.083333336
+    - sprite: {fileID: 21300000, guid: fa23a86fb265e504cbac2d1054046b72, type: 3}
+      time: 0.083333336
+    - sprite: {fileID: 21300000, guid: 83370ddb7ec8e184d93a58caaebc9bf7, type: 3}
+      time: 0.083333336
+    - sprite: {fileID: 21300000, guid: 8fdd810e38e5dc846a0dafe1ad358550, type: 3}
+      time: 0.083333336
+    - sprite: {fileID: 21300000, guid: e1df2dda0b39c8d41bbda625e8bdeb57, type: 3}
+      time: 0.083333336
+    - sprite: {fileID: 21300000, guid: d57bc233ad774a349ae6643bbe17587d, type: 3}
+      time: 0.083333336
+  - name: StompStart
+    frames:
+    - sprite: {fileID: 21300000, guid: 678c68a34b5918140a994f2d666fa9c2, type: 3}
+      time: 0.083333336
   - name: Temp
     frames:
     - sprite: {fileID: 21300000, guid: aad3468f432ce894c942e0c5aa69e83f, type: 3}
