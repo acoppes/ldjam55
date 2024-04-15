@@ -1,5 +1,8 @@
+using System;
+using System.Collections.Generic;
 using Components;
 using Game;
+using Game.Components;
 using Gemserk.Leopotam.Ecs;
 using Gemserk.Triggers.Queries;
 using Gemserk.Utilities;
@@ -9,6 +12,14 @@ using Object = UnityEngine.Object;
 
 public class GameLogic : MonoBehaviour
 {
+    [Serializable]
+    public class CreatureSequence
+    {
+        public string sequence;
+        // public Object definitionOverride;
+        public string anim;
+    }
+    
     public WorldReference worldReference;
     
     [ObjectType(typeof(IEntityDefinition), filterString = "Definition")]
@@ -18,6 +29,8 @@ public class GameLogic : MonoBehaviour
     public Query emptySlotsQuery;
 
     public SignalAsset onCreatureSpawned;
+
+    public List<CreatureSequence> sequences;
 
     public void Update()
     {
@@ -57,6 +70,16 @@ public class GameLogic : MonoBehaviour
         var world = worldReference.GetReference(gameObject);
         var emptySlots = world.GetEntities(emptySlotsQuery);
 
+        if (emptySlots.Count == 0)
+        {
+            // CANT SPAWN MORE
+            return;
+        }
+
+        var runeSequence = world.GetSingleton<RuneSequenceComponent>();
+        Debug.Log("SUMMONING SEQUENCE: " + runeSequence.summonWord);
+
+        var specificCreature = sequences.Find(s => s.sequence.Equals(runeSequence.summonWord, StringComparison.OrdinalIgnoreCase));
         var randomSlot = emptySlots.Random();
 
         var creatureEntity = world.CreateEntity(definition);
@@ -64,10 +87,20 @@ public class GameLogic : MonoBehaviour
 
         randomSlot.Get<SlotComponent>().owner = creatureEntity;
         
+        if (specificCreature != null)
+        {
+            // spawn specific creature...
+            creatureEntity.Add(new StartingAnimationComponent()
+            {
+                startingAnimationType = StartingAnimationComponent.StartingAnimationType.Name,
+                name = specificCreature.anim,
+                loop = true,
+            });
+        }
+        
         onCreatureSpawned.Signal(creatureEntity);
 
-        ref var runeSequence = ref world.GetSingleton<RuneSequenceComponent>();
-        Debug.Log("SUMMONING SEQUENCE: " + runeSequence.summonWord);
+      
         
         // get runes in order
 

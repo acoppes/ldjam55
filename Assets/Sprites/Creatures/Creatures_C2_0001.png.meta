@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f42f916d8856a2747bf410a638a6268e
+guid: 454a01faa6474e64bb5934917aa4e480
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4148315901318120667
-    second: Creatures_Creature1_0001_0
+      213: 1750905069375927734
+    second: Creatures_C2_0001_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,12 +113,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Creatures_Creature1_0001_0
+      name: Creatures_C2_0001_0
       rect:
         serializedVersion: 2
-        x: 8
+        x: 11
         y: 31
-        width: 16
+        width: 10
         height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -127,8 +127,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bd4cb226557c19930800000000000000
-      internalID: 4148315901318120667
+      spriteID: 6b5359742e67c4810800000000000000
+      internalID: 1750905069375927734
       vertices: []
       indices: 
       edges: []

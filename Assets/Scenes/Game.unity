@@ -3134,7 +3134,7 @@ MonoBehaviour:
   animationsAsset: {fileID: 11400000, guid: 7bf2ed17da8077146b520472c2c72e34, type: 2}
   spritesMetadata: {fileID: 0}
   startingAnimationType: 1
-  defaultAnimation: Creature1
+  defaultAnimation: C1
   randomizeStartFrame: 0
   defaultAnimationLoop: 0
 --- !u!114 &390490634
@@ -6099,7 +6099,7 @@ MonoBehaviour:
     distanceType: 2
     range:
       Min: 0
-      Max: 0.5
+      Max: 0.75
     playerAllianceType: -1
     aliveType: 0
     angle:
@@ -9970,6 +9970,9 @@ MonoBehaviour:
   runesQuery: {fileID: 1902027474}
   emptySlotsQuery: {fileID: 726133338}
   onCreatureSpawned: {fileID: 11400000, guid: d67f7c85560391346a96c40e5a3fe8f7, type: 2}
+  sequences:
+  - sequence: ABCDE
+    anim: C2
 --- !u!1 &1445543480
 GameObject:
   m_ObjectHideFlags: 0
@@ -11794,7 +11797,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 212b7d8bf65b48b297c83c75461f1e2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseSpeed: 1.4
+  baseSpeed: 2
   constraints: 0
   initialSpeedType: 1
   normalizeDirection: 1
