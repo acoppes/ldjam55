@@ -10462,6 +10462,8 @@ MonoBehaviour:
   sequences:
   - sequence: ABCDE
     anim: C2
+  - sequence: EBDAC
+    anim: C3
   spawnPointA: {fileID: 261233988}
   spawnPointB: {fileID: 1018328668}
   spawnTime1: 2
